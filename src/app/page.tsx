@@ -1,95 +1,84 @@
-import Image from "next/image";
+"use client";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "./page.module.css";
 
+const poems = [
+  [
+    "O povo implora pela frase do dia,",
+    "E Uccelli responde com apatia.",
+    "Enquanto o povo esta em desespero,",
+    "Uccelli se diverte em um puteiro.",
+    "Algum dia as frases voltarão?",
+    "Não!!! Enquanto Uccelli continuar sendo um cuzão."
+  ],
+  [
+    "Quando uccelli anunciou:",
+    '"A palavra do dia voltou"',
+    "Todo mundo acreditou.",
+    "Já se foram 2 semanas",
+    "E o povo ele engana.",
+    "Nenhuma palavra bacana...",
+    "É um puta sacana!",
+    "Todos os aliados",
+    "Ficaram revoltados",
+    "Agora estão armados.",
+    "E buscam justiça adoidado.",
+    "Uccelli é asqueroso",
+    "Um covarde criminoso",
+    "Ele é o homem mais maldoso!"
+  ],
+  [
+    "Estudei o dia inteiro,",
+    "trabalhei igual pedreiro.",
+    "Para me animar:",
+    "A palavra do dia iria bastar",
+    
+    "É uma grande baixaria,",
+    "estou implorando pelo seu retorno.",
+    "Mas vc é um tremendo corno!",
+    "Mais uma vez não teve palavra do dia"
+  ]
+];
+
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextPoem = () => {
+    setCurrentIndex((prev) => (prev + 1) % poems.length);
+  };
+
+  const prevPoem = () => {
+    setCurrentIndex((prev) => (prev - 1 + poems.length) % poems.length);
+  };
+
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      <h1 className={styles.title}>Dedicado a Lucas Uccelli</h1>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <main className={styles.carousel}>
+        <div className={styles.poemContainer}>
+          <button className={`${styles.arrow} ${styles.left}`} onClick={prevPoem}>
+            <ChevronLeft size={32} />
+          </button>
+
+          <div>
+            {/* Título para o poema */}
+            <h2 className={styles.poemTitle}>Poesia de escárnio {currentIndex + 1}</h2>
+
+            {/* Poema */}
+            <ol className={styles.poem}>
+              {poems[currentIndex].map((line, index) => (
+                <li key={index}>{line}</li>
+              ))}
+            </ol>
+          </div>
+
+          <button className={`${styles.arrow} ${styles.right}`} onClick={nextPoem}>
+            <ChevronRight size={32} />
+          </button>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
