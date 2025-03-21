@@ -41,13 +41,13 @@ const poems = [
   ],
   [
     "Eu fiz um site,",
-    "Sim, a porra de um site.",
-    "Equanto isso Uccelli foge do fight.",
-    "E a palavra do dia não veio nessa night",
+    "E duvido alguem dar copyright.",
+    "Equanto isso Uccelli foge do fight,",
+    "e a palavra do dia não veio nessa night",
 
     "Mais um dia, mais uma tristeza,",
     "como pode tanta avareza ?",
-    "Tantas palavras em um sua cabeça",
+    "Tantas palavras em sua cabeça",
     "como pode ser que a situação permaneça ?",
 
     "Espero que você pereça,",
