@@ -38,6 +38,22 @@ const poems = [
     "estou implorando pelo seu retorno.",
     "Mas vc é um tremendo corno!",
     "Mais uma vez não teve palavra do dia"
+  ],
+  [
+    "Eu fiz um site,",
+    "Sim, a porra de um site.",
+    "Equanto isso Uccelli foge do fight.",
+    "E a palavra do dia não veio nessa night",
+
+    "Mais um dia, mais uma tristeza,",
+    "como pode tanta avareza ?",
+    "Tantas palavras em um sua cabeça",
+    "como pode ser que a situação permaneça ?",
+
+    "Espero que você pereça,",
+    "e de todas as palavras você esqueça.",
+    "Se eu nao tiver a palavra do dia",
+    "É melhor você ficar de vigia..."
   ]
 ];
 
