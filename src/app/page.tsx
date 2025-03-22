@@ -68,8 +68,24 @@ const poems = [
 
     "Algum dia ele deixará de ser arrombado ?",
     "Acho que sabemos o resultado",
-    "Ele o Rian são igauis",
+    "Ele e o Rian são iguais",
     "Ambos são tremendos animais!"
+  ],
+  [
+    "Estou em um restaurante",
+    "pedi um lamen com laxante",
+    "e como sobremesa:",
+    "A palavra do dia seria uma beleza",
+    
+    "Mas Uccelli não se importa,",
+    "to indo ai na sua porta.",
+    "Vê se não afina.",
+    "Isso é punição divina!",
+
+    "Três oitão na cabeça",
+    "'sobe em cima da mesa'",
+    "farei com que você pereça.",
+    "Virou minha sobremesa!!!"
   ]
 ];
 
