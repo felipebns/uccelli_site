@@ -54,6 +54,22 @@ const poems = [
     "e de todas as palavras você esqueça.",
     "Se eu nao tiver a palavra do dia",
     "É melhor você ficar de vigia..."
+  ],
+  [
+    "Uccelli ainda me ignora,",
+    "eu tenho que estudar agora,",
+    "não entendo transferência de calor,",
+    "alguém me ajuda pelo amor!",
+
+    "Uccelli não tem compaixão",
+    "Para se curar dessa condição,",
+    "basta uma única ação:",
+    "Palavra do dia é a solução",
+
+    "Algum dia ele deixará de ser arrombado ?",
+    "Acho que sabemos o resultado",
+    "Ele o Rian são igauis",
+    "Ambos são tremendos animais!"
   ]
 ];
 
