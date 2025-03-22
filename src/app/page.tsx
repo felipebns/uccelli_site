@@ -20,10 +20,12 @@ const poems = [
     "E o povo ele engana.",
     "Nenhuma palavra bacana...",
     "É um puta sacana!",
+    "",
     "Todos os aliados",
     "Ficaram revoltados",
     "Agora estão armados.",
     "E buscam justiça adoidado.",
+    "",
     "Uccelli é asqueroso",
     "Um covarde criminoso",
     "Ele é o homem mais maldoso!"
@@ -33,7 +35,7 @@ const poems = [
     "trabalhei igual pedreiro.",
     "Para me animar:",
     "A palavra do dia iria bastar",
-    
+    "",
     "É uma grande baixaria,",
     "estou implorando pelo seu retorno.",
     "Mas vc é um tremendo corno!",
@@ -44,12 +46,12 @@ const poems = [
     "E duvido alguem dar copyright.",
     "Equanto isso Uccelli foge do fight,",
     "e a palavra do dia não veio nessa night",
-
+    "",
     "Mais um dia, mais uma tristeza,",
     "como pode tanta avareza ?",
     "Tantas palavras em sua cabeça",
     "como pode ser que a situação permaneça ?",
-
+    "",
     "Espero que você pereça,",
     "e de todas as palavras você esqueça.",
     "Se eu nao tiver a palavra do dia",
@@ -60,12 +62,12 @@ const poems = [
     "eu tenho que estudar agora,",
     "não entendo transferência de calor,",
     "alguém me ajuda pelo amor!",
-
+    "",
     "Uccelli não tem compaixão",
     "Para se curar dessa condição,",
     "basta uma única ação:",
     "Palavra do dia é a solução",
-
+    "",
     "Algum dia ele deixará de ser arrombado ?",
     "Acho que sabemos o resultado",
     "Ele e o Rian são iguais",
@@ -76,12 +78,12 @@ const poems = [
     "pedi um lamen com laxante",
     "e como sobremesa:",
     "A palavra do dia seria uma beleza",
-    
+    "",
     "Mas Uccelli não se importa,",
     "to indo ai na sua porta.",
     "Vê se não afina.",
     "Isso é punição divina!",
-
+    "",
     "Três oitão na cabeça",
     "'sobe em cima da mesa'",
     "farei com que você pereça.",
